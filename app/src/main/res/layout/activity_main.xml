@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context=".MainActivity">
+<RelativeLayout android:id="@+id/r1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#969DA3"
+    android:visibility="visible"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/brain2" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="1"
+                android:background="#1AD398"
+                android:gravity="center"
+                android:text="Brain Trainer"
+                android:textColor="#050505"
+                android:textSize="56sp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+            />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="#03A9F4"
+            android:onClick="open"
+            android:text="Go"
+            android:textColor="#050505"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+</RelativeLayout>
